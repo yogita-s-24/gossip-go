@@ -1,12 +1,11 @@
-function App() {
+import React from 'react';
 
+function App() {
   return (
     <>
-      <div>
-        This is my Gossips Go
-      </div>
+      <div className="text-5xl">This is my Gossips Go</div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
