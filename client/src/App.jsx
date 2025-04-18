@@ -7,6 +7,8 @@ import SignupPage from "./pages/SignupPage";
 import ProfilePage from "./pages/ProfilePage";
 import SettingPage from "./pages/SettingPage";
 
+import { Toaster } from "react-hot-toast";
+
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useAuthStore } from "./store/useAuthStore";
 
@@ -28,6 +30,8 @@ function App() {
 
   return (
     <div>
+      <Toaster position="bottom-right" reverseOrder={false} />
+
       <Navbar />
       <Routes>
         <Route
