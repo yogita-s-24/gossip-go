@@ -29,7 +29,7 @@ function App() {
     );
 
   return (
-    <div>
+    <div data-theme="light">
       <Toaster position="bottom-right" reverseOrder={false} />
 
       <Navbar />
