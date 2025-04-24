@@ -1,4 +1,4 @@
-import {create} rom "zustand";
+import {create} from "zustand";
 
 export const useThemeStore = create((set)=> ({
     theme : localStorage.getItem("chat-theme") || "coffee",
