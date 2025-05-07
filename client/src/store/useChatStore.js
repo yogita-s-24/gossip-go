@@ -1,4 +1,4 @@
-import {create} form "zustand";
+import {create} from "zustand";
 import {axiosInstance} from "../lib/axios";
 import toast from 'react-hot-toast';
 
@@ -7,7 +7,7 @@ export const useChatStore = create ((set)=>({
     users:[],
     selectedUser: null,
     isUsersLoading: false,
-    isMessagesLoading: false
+    isMessagesLoading: false,
 
     getUsers : async () =>{
         set({isUsersLoading : true});
